@@ -1,0 +1,33 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /node-test/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-mozharovsky/node-test.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-mozharovsky/node-test/issues"
+  },
+  "homepage": "https://andrew-mozharovsky.github.io/node-test",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "css": "^3.0.0",
+    "gh-pages": "^3.1.0",
+    "parcel-plugin-css-loader": "^0.0.11",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "src": "^1.1.2"
+  }
+}
